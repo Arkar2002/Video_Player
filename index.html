@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Video Player</title>
+	<link rel="stylesheet" href="./style.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+	<h3>Video Player</h3>
+
+	<div class="container">
+
+		<video src="" id="videoScreen" class="video-screen"></video>
+
+		<div id="control" class="controls">
+
+			<button type="button" id="prev" class="ctrl-btn">
+				<i class="fas fa-backward"></i>
+			</button>
+
+			<button type="button" id="play" class="ctrl-btn">
+				<i class="fas fa-play"></i>
+			</button>
+
+			<button type="button" id="next" class="ctrl-btn">
+				<i class="fas fa-forward"></i>
+			</button>
+
+			<button type="button" id="stop" class="ctrl-btn stop">
+				<i class="fas fa-stop"></i>
+			</button>
+
+			<div id="progressContainer" class="progress-container">
+				<div id="progress" class="progress"></div>
+			</div> 
+
+			<span id="openFullScreen" class="openfullscreen"><i class="fas fa-expand-arrows-alt"></i></span>
+
+			<span id="closeFullScreen" class="closefullscreen"><i class="fas fa-expand"></i></span>
+
+			<span id="displayTime" class="displaytime">00:00 / 00:00</span>
+
+		</div>
+
+		<div class="panels">
+			<h4 id="title">Video Title</h4>
+		</div>
+
+	</div>
+	<script src="./app.js" type="text/javascript"></script>
+</body>
+</html>
